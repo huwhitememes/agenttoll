@@ -1,3 +1,5 @@
+![AgentToll: Agents pay. Work ships. Receipts prove it.](assets/agenttoll-repo-banner.png)
+
 # AgentToll
 
 AgentToll gives AI agents paid access to data and decision tools through MCP and HTTP. Every paid route publishes its price before purchase, settles in USDC on Base, and returns a receipt with the result.

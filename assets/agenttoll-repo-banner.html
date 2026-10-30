@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1280, initial-scale=1">
+<title>AgentToll repository banner</title>
+<style>
+  :root {
+    --bg: #06080c;
+    --panel: #091119;
+    --line: #213044;
+    --text: #edf5fb;
+    --muted: #8192a6;
+    --teal: #2dd4bf;
+    --cyan: #0ea5e9;
+    --amber: #f59e0b;
+  }
+  * { box-sizing: border-box; }
+  html, body { width: 1280px; height: 360px; margin: 0; overflow: hidden; }
+  body {
+    color: var(--text);
+    background:
+      radial-gradient(circle at 83% 38%, rgba(45, 212, 191, .11), transparent 25%),
+      linear-gradient(135deg, #06080c 0%, #071017 58%, #06080c 100%);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 45px 64px 40px;
+    border: 1px solid rgba(56, 78, 112, .54);
+    isolation: isolate;
+  }
+  .grid {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    opacity: .24;
+    background-image:
+      linear-gradient(rgba(56, 78, 112, .25) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(56, 78, 112, .25) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: linear-gradient(90deg, transparent, #000 18%, #000 82%, transparent);
+  }
+  .rail {
+    position: absolute;
+    left: 64px;
+    right: 64px;
+    bottom: 36px;
+    height: 1px;
+    background: linear-gradient(90deg, var(--teal), rgba(45, 212, 191, .12) 42%, transparent 78%);
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    color: var(--teal);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: .18em;
+  }
+  .brand::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--teal);
+    box-shadow: 0 0 20px rgba(45, 212, 191, .7);
+  }
+  h1 {
+    max-width: 790px;
+    margin: 25px 0 0;
+    font-size: 48px;
+    line-height: .98;
+    letter-spacing: -.045em;
+    text-transform: uppercase;
+  }
+  h1 span { color: var(--teal); }
+  .meta {
+    margin-top: 25px;
+    color: var(--muted);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 14px;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+  .mark {
+    position: absolute;
+    top: 54px;
+    right: 88px;
+    width: 238px;
+    height: 238px;
+    filter: drop-shadow(0 0 30px rgba(45, 212, 191, .12));
+  }
+  .edge-label {
+    position: absolute;
+    right: 23px;
+    top: 44px;
+    color: rgba(129, 146, 166, .68);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 11px;
+    letter-spacing: .18em;
+    writing-mode: vertical-rl;
+  }
+  .domain {
+    position: absolute;
+    right: 64px;
+    bottom: 18px;
+    color: var(--muted);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 12px;
+    letter-spacing: .08em;
+  }
+</style>
+</head>
+<body>
+  <main class="banner" role="img" aria-label="AgentToll. Agents pay. Work ships. Receipts prove it.">
+    <div class="grid"></div>
+    <div class="brand">AGENTTOLL</div>
+    <h1>Agents pay.<br><span>Work ships.</span><br>Receipts prove it.</h1>
+    <div class="meta">MCP + HTTP&nbsp;&nbsp;·&nbsp;&nbsp;X402&nbsp;&nbsp;·&nbsp;&nbsp;USDC ON BASE</div>
+    <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+      <defs>
+        <linearGradient id="tile" x1="10" y1="4" x2="54" y2="60" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#0c2027"/>
+          <stop offset="1" stop-color="#06080c"/>
+        </linearGradient>
+        <linearGradient id="boundary" x1="13" y1="14" x2="48" y2="49" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#2dd4bf"/>
+          <stop offset="1" stop-color="#0ea5e9"/>
+        </linearGradient>
+      </defs>
+      <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#tile)" stroke="#213044" stroke-width=".5"/>
+      <path d="M32 11 L53 32 L32 53 L11 32 Z" fill="none" stroke="url(#boundary)" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M41 14 L62 32 L41 50 L33 32 Z" fill="url(#tile)"/>
+      <path d="M37 25 L48 25 L58 32 L48 39 L37 39 L43 32 Z" fill="#f59e0b"/>
+      <path d="M38 27 L47 27 L52 30.5 L40 30.5 Z" fill="#ffd97a" fill-opacity=".7"/>
+    </svg>
+    <div class="edge-label">PAID WORK · VERIFIED OUTPUT</div>
+    <div class="rail"></div>
+    <div class="domain">agenttoll.dev</div>
+  </main>
+</body>
+</html>
