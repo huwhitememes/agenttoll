@@ -46,7 +46,7 @@ This repository documents how buyers discover, inspect, purchase, and verify Age
 
 ## Support
 
-Report public integration problems through [GitHub Issues](https://github.com/huwhitememes/agenttoll/issues). For account, institutional, or security matters, email [memerhuwhite@gmail.com](mailto:memerhuwhite@gmail.com).
+Report public integration problems through [GitHub Issues](https://github.com/huwhitememes/agenttoll/issues). For account, institutional, or security matters, email [sales@agenttoll.dev](mailto:sales@agenttoll.dev).
 
 ## License
 

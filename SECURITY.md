@@ -2,7 +2,7 @@
 
 Do not open a public issue for a suspected vulnerability, exposed credential, payment bypass, or private customer data.
 
-Email `memerhuwhite@gmail.com` with:
+Email `sales@agenttoll.dev` with:
 
 - The affected AgentToll route or public artifact
 - Reproduction steps that do not move real funds
